@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block title %}Formulario clásico{% endblock %}
+{% block content %}<section class="card"><h1>Formulario de contacto (forms.Form)</h1>{% if enviado %}<p class="success">Formulario válido y procesado. Mensaje: {{ mensaje }}</p>{% endif %}<form method="post">{% csrf_token %}{{ form.as_p }}{{ form.errors }}<button type="submit">Enviar</button></form></section>{% endblock %}

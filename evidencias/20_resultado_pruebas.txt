@@ -1,0 +1,39 @@
+Creating test database for alias 'default'...
+
+......INFO HTTP GET /admin/estudiantes/estudiante/ -> 302
+INFO HTTP GET /admin/estudiantes/estudiante/ -> 200
+.INFO HTTP POST /registro/ -> 302
+INFO HTTP GET /estudiantes/ -> 302
+INFO HTTP POST /accounts/login/ -> 302
+INFO HTTP GET /estudiantes/ -> 200
+INFO HTTP GET /admin/estudiantes/estudiante/ -> 200
+INFO HTTP POST /accounts/logout/ -> 302
+INFO HTTP GET /estudiantes/ -> 302
+.INFO HTTP POST /contacto/ -> 200
+.INFO HTTP POST /registro/ -> 403
+INFO HTTP GET /registro/ -> 200
+INFO HTTP POST /registro/ -> 302
+.INFO HTTP GET /estudiantes/ -> 302
+INFO HTTP POST /accounts/login/ -> 200
+INFO HTTP GET /estudiantes/ -> 403
+INFO HTTP GET /estudiantes/ -> 200
+INFO HTTP POST /accounts/logout/ -> 302
+INFO HTTP GET /estudiantes/ -> 302
+.INFO HTTP POST /accounts/logout/ -> 403
+INFO HTTP GET /accounts/login/ -> 200
+INFO HTTP POST /accounts/logout/ -> 302
+.INFO HTTP GET /accounts/login/ -> 200
+INFO HTTP POST /accounts/login/ -> 302
+.INFO HTTP GET /registro/ -> 200
+INFO HTTP POST /registro/ -> 302
+INFO HTTP GET /estudiantes/ -> 302
+INFO HTTP GET /accounts/login/ -> 200
+.
+----------------------------------------------------------------------
+Ran 14 tests in 18.869s
+
+OK
+Destroying test database for alias 'default'...
+
+Found 14 test(s).
+System check identified no issues (0 silenced).
